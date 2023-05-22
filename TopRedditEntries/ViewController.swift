@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var entriesTableView: UITableView?
     
-    private let entriesService: RedditEntriesService = RedditEntriesService()
+    private let entriesService: RedditEntriesServiceProtocol = RedditEntriesService()
     
     private var entries: [Post] = []
     private var lastPost: String = ""

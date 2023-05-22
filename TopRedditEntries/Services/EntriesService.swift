@@ -7,7 +7,11 @@
 
 import Foundation
 
-class RedditEntriesService {
+protocol RedditEntriesServiceProtocol {
+    func getEntries(request: ListingRequest, completion: @escaping (Result<(posts: [Post]?, after: String?), Error>) -> Void)
+}
+
+class RedditEntriesService: RedditEntriesServiceProtocol {
     func getEntries(request: ListingRequest, completion: @escaping (Result<(posts: [Post]?, after: String?), Error>) -> Void) {
         NetworkService.share.request(endpoint: EntriesEndpoints.getTopEntries(count: request.count, after: request.after), decodeType: Listing.self) { result in
             switch result {
