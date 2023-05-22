@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EntriesViewController.swift
 //  TopRedditEntries
 //
 //  Created by Germano Rojas on 21/5/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EntriesViewController: UIViewController {
     
     @IBOutlet weak var entriesTableView: UITableView?
     
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
    }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension EntriesViewController: UITableViewDelegate, UITableViewDataSource {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
        let offsetY = scrollView.contentOffset.y
        let contentHeight = scrollView.contentSize.height
@@ -94,8 +94,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { }
 }
 
 private extension UITableView {

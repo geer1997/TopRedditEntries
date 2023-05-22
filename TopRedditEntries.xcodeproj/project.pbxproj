@@ -12,7 +12,7 @@
 		B321EF95DD973BBED287C536 /* Pods_TopRedditEntries_TopRedditEntriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD4274855CC54FA7A2579A5 /* Pods_TopRedditEntries_TopRedditEntriesUITests.framework */; };
 		F3E644E22A1A94BB00A4848A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E644E12A1A94BB00A4848A /* AppDelegate.swift */; };
 		F3E644E42A1A94BB00A4848A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E644E32A1A94BB00A4848A /* SceneDelegate.swift */; };
-		F3E644E62A1A94BB00A4848A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E644E52A1A94BB00A4848A /* ViewController.swift */; };
+		F3E644E62A1A94BB00A4848A /* EntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E644E52A1A94BB00A4848A /* EntriesViewController.swift */; };
 		F3E644E92A1A94BB00A4848A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E644E72A1A94BB00A4848A /* Main.storyboard */; };
 		F3E644EC2A1A94BB00A4848A /* TopRedditEntries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3E644EA2A1A94BB00A4848A /* TopRedditEntries.xcdatamodeld */; };
 		F3E644EE2A1A94BF00A4848A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E644ED2A1A94BF00A4848A /* Assets.xcassets */; };
@@ -60,7 +60,7 @@
 		F3E644DE2A1A94BB00A4848A /* TopRedditEntries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopRedditEntries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E644E12A1A94BB00A4848A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E644E32A1A94BB00A4848A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3E644E52A1A94BB00A4848A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3E644E52A1A94BB00A4848A /* EntriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesViewController.swift; sourceTree = "<group>"; };
 		F3E644E82A1A94BB00A4848A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3E644EB2A1A94BB00A4848A /* TopRedditEntries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TopRedditEntries.xcdatamodel; sourceTree = "<group>"; };
 		F3E644ED2A1A94BF00A4848A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,9 +164,8 @@
 				F3E645142A1AA48400A4848A /* Models */,
 				F3E644E12A1A94BB00A4848A /* AppDelegate.swift */,
 				F3E644E32A1A94BB00A4848A /* SceneDelegate.swift */,
-				F3E644E52A1A94BB00A4848A /* ViewController.swift */,
-				F3E644E72A1A94BB00A4848A /* Main.storyboard */,
 				F3E644ED2A1A94BF00A4848A /* Assets.xcassets */,
+				F3E644E72A1A94BB00A4848A /* Main.storyboard */,
 				F3E644EF2A1A94BF00A4848A /* LaunchScreen.storyboard */,
 				F3E644F22A1A94BF00A4848A /* Info.plist */,
 				F3E644EA2A1A94BB00A4848A /* TopRedditEntries.xcdatamodeld */,
@@ -211,6 +210,7 @@
 		F3E645162A1AC63D00A4848A /* EntriesList */ = {
 			isa = PBXGroup;
 			children = (
+				F3E644E52A1A94BB00A4848A /* EntriesViewController.swift */,
 				F3E6452A2A1B04E800A4848A /* EntryCellView */,
 			);
 			path = EntriesList;
@@ -498,7 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E644E62A1A94BB00A4848A /* ViewController.swift in Sources */,
+				F3E644E62A1A94BB00A4848A /* EntriesViewController.swift in Sources */,
 				F3E644E22A1A94BB00A4848A /* AppDelegate.swift in Sources */,
 				F3E6451F2A1ACCC300A4848A /* NetworkService.swift in Sources */,
 				F3E644EC2A1A94BB00A4848A /* TopRedditEntries.xcdatamodeld in Sources */,
