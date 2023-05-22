@@ -52,7 +52,7 @@ class ViewController: UIViewController {
            DispatchQueue.global().async {
                sleep(2)
                let start = self.entries.count
-               print("===> entries count", start)
+               
                let end = start + 10
 
                if end < 1050 {
